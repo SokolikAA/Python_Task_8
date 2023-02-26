@@ -26,8 +26,8 @@ def add_phone_book(file):
         for i in file:
             user_data = input('Введите через пробел номер телефона, имя и примечание: ')
             user_data = '; '.join(user_data.split(' '))
-            guide.append(user_data + '\n')
-            return guide
+            file.append(user_data + '\n')
+            return file
 
 
 def change_phone_book(file):
